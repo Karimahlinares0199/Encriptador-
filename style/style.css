@@ -1,0 +1,224 @@
+body{
+
+position: relative;
+width: 1200px;
+background: #F3F5FC;
+font-family: 'Inter';
+}
+
+h1{
+    display: flex;
+    color: #0A3871;
+    font-size: 3rem;
+}
+
+h2{
+    display: flex;
+    color: #0A3871;
+    font-size: 2rem;
+}
+
+header{
+    display: flex;
+    position: relative;
+    width: 100%;
+    gap: 2rem;
+    margin: 1rem;
+    align-items: center;
+}
+
+.logoAlura{
+    width: 40px;
+    height: 31px;
+}
+
+/* modificar el area donde va el texto ingresado y los botones */
+
+.encriptacionTexto {
+    display: flex;
+    float: left;
+    flex-direction: column;
+    width: 35%;
+    height: 75%;
+    margin: 2rem 3rem 3rem 2rem;
+    padding: auto;
+}
+
+.textoEncriptado{
+  font-size: 1.4rem;
+  font-family: 'Inter';
+  color: #0A3871;
+  width: 450px;
+  height: 200px;
+}
+
+.botones{
+    display: flex;
+    flex-direction:column;
+    gap: 1rem;
+    margin: 0 auto;
+
+}
+
+.botonEncriptado {
+    padding: 0.7rem 4.5rem;
+    background: #0A3871;
+    border-radius: 24px;
+    text-align: center;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.botonDesencriptado{
+    padding: .7rem 4.5rem;
+    background: white;
+    border-radius: 24px;
+    text-align: center;
+    color: #0A3871 ;
+    cursor: pointer;
+}
+
+.copiarTexto{
+    padding: .7rem 4.5rem;
+    background: 757fb2;
+    border-radius: 24px;
+    text-align: center;
+    color: #0A3871 ;
+    cursor: pointer;
+    margin: 0 auto;
+    display: none;
+
+    
+}
+
+/* modificar el area donde va el texto con la encriptacion */
+
+.mostrarEncriptacion{
+    display: flex;
+    flex-direction: column;
+    float: left;
+    width: 35%;
+    height: 80%;
+    padding: auto;
+    text-align: center;
+    margin: 2rem 2rem 3rem 3rem;
+    visibility: visible;
+    
+}
+
+textarea{
+    display: none;
+    background-color: white;
+    border: none;
+    font-size: 1.4rem;
+    font-family: 'Inter';
+    color: #495057;
+    margin: 0 auto;
+}
+
+
+
+footer{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 6rem auto;
+    align-items: center;
+    line-height: 0.1rem;
+    font-weight: bold;
+
+}
+
+@media (min-width : 400px) and (max-width: 550px) {
+   body {width: 80%;
+        font-size: 16px;
+}
+
+    .incluirTexto{
+        width: 100%;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+
+    h1 { font-size: 1.8rem;}
+
+    h2 {display: flex; 
+        font-size: 1.3rem;
+        margin: 5% 15%;
+    }
+
+    .encriptacionTexto{
+        width: 100%;
+    }
+
+    .textoEncriptado{
+        width: 80%;
+        font-size: 1rem;
+    }
+
+    .botones{
+        width: 70%;
+        margin: 5% 10%;
+    }
+
+    .mostrarEncriptacion{
+        width: 80%;
+    }
+
+    .noEncontrado{
+        width: 18rem;
+        
+    }
+
+    textarea{
+        width: 75%;
+        margin: 5% 12%;
+        font-size: 1rem;
+    }
+}
+
+@media ((min-width: 551px) and (max-width: 950px)) {
+    
+    body{
+        width: 80%;
+    }
+
+    .incluirTexto{
+        width: 100%;
+        align-items: center;
+        margin: 5% auto;
+        
+    }
+
+    .encriptacionTexto{
+        width: 90%;
+        text-align: center;
+    }
+
+    .textoEncriptado{
+        width: 80%;
+        font-size: 1.2rem;
+        margin: 2% 8%;
+    }
+
+    .botones{
+        width: 80%;
+        margin: 5% 10%;
+    }
+
+    .mostrarEncriptacion{
+        width: 80%;
+    }
+
+    .noEncontrado{
+        width: 40rem;
+        
+    }
+
+    textarea{
+        width: 75%;
+        margin: 5% 10%;
+        font-size: 1.2rem;
+    }
+}
